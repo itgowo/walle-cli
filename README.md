@@ -2,6 +2,8 @@
 
 ### 根据walle官方源码制作，主要是做了打包处理，增加了部分日志输出
 
+[walle-cli-all.jar](walle-cli-all.jar)
+
 ### [源码版本](https://github.com/Meituan-Dianping/walle/commit/5a9e399c146678e4fbee06d0877b3bce34bafdc0)
  ```
 Commits on Nov 6, 2019
@@ -28,13 +30,13 @@ ${}标识变量，需要手动赋值，$()是用来找文件的，是linux命令
     ```
 4. 360加固(命令行模式，方便自动化)
     ``` 
-   //首次使用必须登录
+   #首次使用必须登录
     java -jar tool/jiagu/jiagu.jar -login ${username} ${password}
-   //导入签名文件
+   #导入签名文件
    java -jar jiagu/jiagu.jar -importsign tool/sign ${pass} ${alias} ${pass2}
-   //配置服务，请看360官网说明选择
+   #配置服务，请看360官网说明选择
    java -jar jiagu/jiagu.jar  -config -update -crashlog -x86
-   //上传、加固、下载和自动签名
+   #上传、加固、下载和自动签名
    java -jar jiagu/jiagu.jar -jiagu tool/channels/app.apk tool/channels -autosign
     ```
 5. walle打包
