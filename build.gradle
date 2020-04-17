@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.4"
+    }
+}
 plugins {
     id 'java'
 }
@@ -10,10 +20,21 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
 }
+
+apply plugin: "com.github.johnrengelman.shadow"
+version = '1.6.1'
+apply plugin: 'java'
+group 'com.dounine.gradle'
+sourceCompatibility = 1.8
+
 jar {
     manifest {
-        attributes 'Main-Class': 'com.meituan.android.walle.Main'
+        attributes  'Main-Class': 'com.meituan.android.walle.Main'
+        attributes 'Walle-Version': '1.6.1'
     }
+}
+shadowJar {
+    zip64 true
 }
 dependencies {
 

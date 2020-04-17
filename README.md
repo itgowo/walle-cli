@@ -44,3 +44,8 @@ ${}标识变量，需要手动赋值，$()是用来找文件的，是linux命令
     java -jar walle/walle-cli-all.jar batch2 -f ${channelfile}  $(ls tool/channels/app_*_jiagu_sign.apk) tool/channels
     ```
  
+ 
+ ## 生成jar包  
+ ```
+./gradlew shadowJar
+```
