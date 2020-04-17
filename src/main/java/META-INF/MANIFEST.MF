@@ -1,0 +1,3 @@
+Manifest-Version: 1.6.1
+com.meituan.android.walle.Main-Class: com.meituan.android.walle.Main
+
