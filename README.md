@@ -1,6 +1,6 @@
 # walle-cli
 
-### 根据walle官方源码制作，主要是做了打包处理，增加了部分日志输出
+### 根据walle官方源码制作，主要是做了打包处理，增加了部分日志输出，使用方式和处理逻辑没有改变
 
 [walle-cli-all.jar](walle-cli-all.jar)
 
@@ -14,6 +14,7 @@ Commits on Nov 6, 2019
 
 有兴趣的看看我的其他项目： [https://github.com/itgowo](https://github.com/itgowo)
 
+### 使用方式请查看walle官方walle-cli方式，我只是打了个包
 
 ### 解决问题都是从制造问题开始
 ## 解决项目流程
